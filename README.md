@@ -1,6 +1,7 @@
-![](https://github.com/nickmancari/linux_bxtch/images/Logo2.png)
+![](https://github.com/nickmancari/linux_bxtch/blob/master/images/Logo2.png)
 
 
-Linux Bitch website source code
+<p align='center'> Linux Bitch website source code </p>
 
----Linux Bitch is a linux distro search engine written in Go---
+<p align='center'> ---Linux Bitch is a linux distro search engine written in Go--- </p>
+
