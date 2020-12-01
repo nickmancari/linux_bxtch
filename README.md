@@ -1,4 +1,4 @@
-![Image] (https://github.com/nickmancari/linux_bxtch/images/Logo2.png)
+![](https://github.com/nickmancari/linux_bxtch/images/Logo2.png)
 
 
 Linux Bitch website source code
