@@ -1,4 +1,4 @@
-<img height="30" src="https://github.com/nickmancari/linux_bxtch/images/Logo2.png">
+<img height="50" src="https://github.com/nickmancari/linux_bxtch/images/Logo2.png">
 
 # linux_bxtch
 Linux Bitch website source code
