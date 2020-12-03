@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Search: "{{.Search}}"</h2>
+<p>Sorted By Popularity</p>
+
+<table>
+  <tr>
+    <th>OS Name</th>
+    <th>Link</th>
+    <th>Linux Base</th>
+  </tr>
+  <tr>
+    <td>{{.Search}}</td>
+    <td><a href="{{.Link}}">DOWNLOAD</a></td>
+    <td>{{.Base}}</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
