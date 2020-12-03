@@ -3,5 +3,5 @@
 
 <p align='center'> Linux Bitch website source code </p>
 
-<p align='center'> ---Linux Bitch is a linux distro search engine written in Go--- </p>
+<p align='center'> ---Linux Bitch is a VERY lightweight linux distro search engine written in Go--- </p>
 
