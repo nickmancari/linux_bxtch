@@ -1,0 +1,10 @@
+{"os":[
+{"name":"Arch Linux","download":".iso","base":"pacman"},
+{"name":"Black Lab","download":".iso","base":"debian"},
+{"name":"CentOS","download":".iso","base":"rhel"},
+{"name":"Debian","download":".iso","base":"debian"},
+{"name":"Elementary OS","download":".iso","base":"debian"},
+{"name":"Fedora","download":".iso","base":"rhel"}
+]
+}
+	
