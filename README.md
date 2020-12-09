@@ -8,7 +8,7 @@
 <p></p>
 
 # Synopsis:
-* Engine will be made with Bleve (fast and easy to use)
+* Engine will be made with Bleve (fast and easy to use with indexing builtin)
 * JSON data will serve as makeshift database (easy to compile)
-* Only using golang templates as frontend (again, easy of use)
+* Only using golang templates as frontend (again, easy of use) with minimalist design
 * Go everything for learning purposes
