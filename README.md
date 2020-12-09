@@ -5,7 +5,7 @@
 
 <p align='center'> ---Linux Bitch is a VERY lightweight linux distro search engine written in Go--- </p>
 
-<br>
+
 
 Synopsis:
 	* Engine will be made with Bleve (fast and easy to use)
