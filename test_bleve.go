@@ -1,9 +1,11 @@
 //Testing Bleve indexing and querying with JSON files in database
+//Toying around
 
 package main
 
 import (
 	"testing"
+	"fmt"
 	"io/ioutil"
 	"encoding/json"
 	"path/filepath"
@@ -11,12 +13,14 @@ import (
 	"github.com/blevesearch/bleve"
 )
 
+func main() {
+
+	fmt.Println(TestBleveSearch, jsonFile.filename)
+}
+
 func TestBleveSearch( t *testing.T) {
 	
-	mapping, err := buildIndexMapping()
-	if err != nil {
-		t.Fatal(err)
-	}
+	mapping := bleve.NewIndexMapping()
 	index, err := bleve.New("search.bleve", mapping)
 	if err != nil {
 		t.Fatal(err)
@@ -69,7 +73,7 @@ func TestBleveSearch( t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-
+	fmt.Println(termSearchResult)
 }
 
 type jsonFile struct {
