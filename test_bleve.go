@@ -5,17 +5,15 @@ package main
 
 import (
 	"testing"
-	"fmt"
 	"io/ioutil"
 	"encoding/json"
-	"path/filepath"
-
+	"fmt"
 	"github.com/blevesearch/bleve"
 )
 
 func main() {
 
-	fmt.Println(TestBleveSearch, jsonFile.filename)
+	fmt.Println(TestBleveSearch)
 }
 
 func TestBleveSearch( t *testing.T) {
@@ -34,9 +32,6 @@ func TestBleveSearch( t *testing.T) {
 		t.Fatal(err)
 	}
 
-	indexBatchSize := 100
-	batch := index.NewBatch()
-	batchCount := 0
 
 	for _, dirEntry := range dirEntries {
 		filename := dirEntry.Name()
@@ -51,19 +46,6 @@ func TestBleveSearch( t *testing.T) {
 		if err != nil {
 			t.Fatal(err)
 		}
-		ext := filepath.Ext(filename)
-		docId := filename[:(len(filename) - len(ext))]
-		batch.Index(docId, jsonDoc)
-		batchCount++
-	
-		if batchCount >= indexBatchSize {
-			err = index.Batch(batch)
-			if err != nil {
-				t.Fatal(err)
-			}
-			batch = index.NewBatch()
-			batchCount = 0
-		}
 	}
 	
 	termQuery := bleve.NewTermQuery("Arch")
@@ -73,7 +55,6 @@ func TestBleveSearch( t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	fmt.Println(termSearchResult)
 }
 
 type jsonFile struct {
