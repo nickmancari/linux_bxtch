@@ -55,6 +55,7 @@ func TestBleveSearch( t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
+	fmt.Println(termSearchResult)
 }
 
 type jsonFile struct {
