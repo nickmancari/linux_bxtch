@@ -15,3 +15,4 @@
 
 ## Notes:
 - Abandonded Bleve for now. Too robust for proof-of-concept
+- Need to tweak search input variable to take upper and lower case variations
