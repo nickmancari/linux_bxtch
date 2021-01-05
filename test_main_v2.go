@@ -39,6 +39,7 @@ func results(w http.ResponseWriter, r *http.Request) {
 	}
 	
 	search := r.FormValue("q")
+
 	jq := gojsonq.New().File("./complete_master.json")
         res := jq.Find(search)
         link := fmt.Sprint(res)	
