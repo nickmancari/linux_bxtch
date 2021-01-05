@@ -8,10 +8,10 @@
 <p></p>
 
 # Synopsis:
-* Engine will be made with Bleve (fast and easy to use with indexing builtin)
+* Engine will be made with lightwieght JSON parser GOJSONQ
 * JSON data will serve as makeshift database (easy to compile)
 * Only using golang templates as frontend (again, easy of use) with minimalist design
 * Go everything for learning purposes
 
 ## Notes:
-- So far, Bleve only plays well with go.13
+- Abandonded Bleve for now. Too robust for proof-of-concept

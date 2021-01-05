@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
-	jq := gojsonq.New().Folder("./db")
-	res := jq.From("vendor.items").SortBy("price").Get()
+	jq := gojsonq.New().File("./master.json")
+	res := jq.Find("download")
 	fmt.Println(res)
+}

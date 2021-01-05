@@ -1,4 +1,4 @@
-//Testing db files in Go
+//Testing db files in Go and JSON handling
 
 package main
 
