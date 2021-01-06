@@ -1,4 +1,4 @@
-// POS example of 'search & serve' using data index
+// POC example of 'search & serve' using data index
 
 package main
 
