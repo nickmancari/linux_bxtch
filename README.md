@@ -8,12 +8,10 @@
 <p></p>
 
 # Synopsis:
-* Engine will be made with lightwieght JSON (fast) parser GOJSONQ
-* JSON data will serve as makeshift database (easy to compile)
-* Only using golang templates as frontend for speed and minimalist design
+* JSON data will serve as makeshift database for now (easy to compile)
+* Only using Go html/templates as frontend for speed and minimalist design
 * Go everything for learning purposes
 
 ## Notes:
-- Abandonded Bleve for now. Too robust for proof-of-concept
 - Need to tweak search input variable to take upper and lower case variations
 - Search and serve now functioning with Go templates
