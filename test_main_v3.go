@@ -1,4 +1,4 @@
-// POS example of 'search & serve' using data index
+// POC example of 'search & serve' using data index
 
 package main
 
@@ -40,9 +40,9 @@ func results(w http.ResponseWriter, r *http.Request) {
 	
 	search := r.FormValue("q")
 
-	jq := gojsonq.New().File("./data/complete_master.json")
-        res := jq.From(search).WhereContains(search, search).Get()
+        res := gojsonq.New().File("./data/complete_master.json").Find(search)
         link := fmt.Sprint(res)
+	
 	imagesearch := gojsonq.New().File("./data/icons.json").Find(search)
 	image := fmt.Sprint(imagesearch)	
 

@@ -40,16 +40,20 @@ func results(w http.ResponseWriter, r *http.Request) {
 	
 	search := r.FormValue("q")
 
-	jq := gojsonq.New().File("./data/complete_master.json")
-        res := jq.Find(search)
-        link := fmt.Sprint(res)	
+        res := gojsonq.New().File("./data/complet_master.json").Find(search)
+        link := fmt.Sprint(res)
+	
+	imagesearch := gojsonq.New().File("./data/icons.json").Find(search)
+        image := fmt.Sprint(imagesearch)	
 
 	data := struct {
 		Search string
 		Link string
+		Image string
 	}{
 		Search: search,
 		Link: link,
+		Image: image,
 	}
 	tpl.ExecuteTemplate(w, "search.html", data)
 }
