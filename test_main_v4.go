@@ -1,12 +1,12 @@
-// very early stages of development, nothing is permanent--getting the hang of GO
-// this will be where the magic happens
+// POC example of 'search & serve' using data index
 
 package main
 
 import (
 	"net/http"
+	"fmt"
 	"html/template"
-	
+	"github.com/thedevsaddam/gojsonq"	
 )
 
 
@@ -40,13 +40,20 @@ func results(w http.ResponseWriter, r *http.Request) {
 	
 	search := r.FormValue("q")
 
-	//query into Bleve and then result output to var that gets written to 	
-	//search.html file
+        res := gojsonq.New().File("./data/complete_master.json").Find(search)
+        link := fmt.Sprint(res)
+	
+	imagesearch := gojsonq.New().File("./data/icons.json").Find(search)
+	image := fmt.Sprint(imagesearch)	
 
 	data := struct {
 		Search string
+		Link string
+		Image string
 	}{
 		Search: search,
+		Link: link,
+		Image: image,
 	}
 	tpl.ExecuteTemplate(w, "search.html", data)
 }

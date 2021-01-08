@@ -40,7 +40,7 @@ func results(w http.ResponseWriter, r *http.Request) {
 	
 	search := r.FormValue("q")
 
-        res := gojsonq.New().File("./data/complet_master.json").Find(search)
+        res := gojsonq.New().File("./data/complete_master.json").Find(search)
         link := fmt.Sprint(res)
 	
 	imagesearch := gojsonq.New().File("./data/icons.json").Find(search)
