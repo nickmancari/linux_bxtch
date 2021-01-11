@@ -40,7 +40,7 @@ func results(w http.ResponseWriter, r *http.Request) {
 	
 	search := r.FormValue("q")
 
-        res := gojsonq.New().File("./data/1_db.json").From("operating_system.linux").WhereContains("name", search).Pluck("download")
+        res := gojsonq.New().File("./data/test.json").From("system.linux").WhereContains("name", search).Only("download")
         link := fmt.Sprint(res)
 	
 	imagesearch := gojsonq.New().File("./data/icons.json").Find(search)
