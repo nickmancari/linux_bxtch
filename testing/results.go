@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"html/template"
 	"github.com/thedevsaddam/gojsonq"
+	"encoding/json"
 )
 
 var tpl *template.Template
@@ -28,9 +29,8 @@ func results(w http.ResponseWriter, r *http.Request) {
                 v:= item{}
 
               gojsonq.New().File("./data/test.json").From("system.linux.[3]").Out(&v)
-                
 
-		out := fmt.Sprintf("Name: %s", "Download: %s", v.Name, v.Download)	
+		out := fmt.Sprintf("Name: %s", "Download: %s", item.Name, item.Download)	
 
 	tpl.ExecuteTemplate(w, "results.html", out)
 }
