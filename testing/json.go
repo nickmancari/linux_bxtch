@@ -7,7 +7,8 @@ import (
 
 func main() {
 		
-		search := "e"
-		res := gojsonq.New().File("./data/test.json").From("system.linux").WhereContains("name", search).Only("download", "name")
-		fmt.Printf("%+v\n", res)
+		search := "fedora"
+		res := gojsonq.New().File("../data/test.json").From("system.linux").WhereContains("name", search).Only("download", "name")
+
+		fmt.Fprintf("%v/n", res)
 }

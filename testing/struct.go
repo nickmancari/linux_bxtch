@@ -29,8 +29,7 @@ func results(w http.ResponseWriter, r *http.Request) {
 		
 		gojsonq.New().File("../data/test.json").From("system.linux.[3]").Out(&v)
 		
-		data := fmt.Sprint("Name: %s\nDownload: %s\n", v.Name, v.Download)
-
-		tpl.ExecuteTemplate(w, "results.html", data)
+		data := fmt.Sprintf(v.Download)
+		tpl.ExecuteTemplate(w, "table.html", data)
 	
 }
