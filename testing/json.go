@@ -10,5 +10,5 @@ func main() {
 		search := "fedora"
 		res := gojsonq.New().File("../data/test.json").From("system.linux").WhereContains("name", search).Only("download", "name")
 
-		fmt.Fprintf("%v/n", res)
+		fmt.Sprint("%s\n", res)
 }

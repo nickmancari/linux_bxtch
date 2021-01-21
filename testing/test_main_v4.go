@@ -40,10 +40,10 @@ func results(w http.ResponseWriter, r *http.Request) {
 	
 	search := r.FormValue("q")
 
-        res := gojsonq.New().File("./data/test.json").From("system.linux").WhereContains("name", search).Only("download")
+        res := gojsonq.New().File("../data/test.json").From("system.linux").WhereContains("name", search).Only("download")
         link := fmt.Sprint(res)
 	
-	imagesearch := gojsonq.New().File("./data/icons.json").Find(search)
+	imagesearch := gojsonq.New().File("../data/icons.json").Find(search)
 	image := fmt.Sprint(imagesearch)	
 
 	data := struct {
@@ -55,5 +55,5 @@ func results(w http.ResponseWriter, r *http.Request) {
 		Link: link,
 		Image: image,
 	}
-	tpl.ExecuteTemplate(w, "search.html", data)
+	tpl.ExecuteTemplate(w, "range.html", data)
 }
