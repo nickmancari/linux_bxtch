@@ -29,7 +29,7 @@ func main() {
 }
 
 func index( w http.ResponseWriter, r *http.Request) {
-	tpl.ExecuteTemplate(w, "index.html", nil)
+	tpl.ExecuteTemplate(w, "altern_index.html", nil)
 }
 
 func results(w http.ResponseWriter, r *http.Request) {
