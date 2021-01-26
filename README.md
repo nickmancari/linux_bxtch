@@ -13,6 +13,8 @@
 * Go everything for learning purposes
 
 ## Notes:
+- Solidify JSON data structure to serve results easier and more dynamically
 - Need to tweak search input variable to take upper and lower case variations
 - Search and serve now functioning with Go templates
 - Integrate OS icons (add to the result table, make linkable, etc...)
+
