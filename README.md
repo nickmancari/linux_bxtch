@@ -15,3 +15,4 @@
 ## Notes:
 - Need to tweak search input variable to take upper and lower case variations
 - Search and serve now functioning with Go templates
+- Integrate OS icons (add to the result table, make linkable, etc...)
