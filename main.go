@@ -46,14 +46,6 @@ func results(w http.ResponseWriter, r *http.Request) {
 	imagesearch := gojsonq.New().File("./data/icons.json").Find(search)
         image := fmt.Sprint(imagesearch)	
 
-	data := struct {
-		Search string
-		Link string
-		Image string
-	}{
-		Search: search,
-		Link: link,
-		Image: image,
-	}
+	data := map[string]string{"Search": search, "Link": link, "Image": image,}
 	tpl.ExecuteTemplate(w, "search.html", data)
 }
