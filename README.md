@@ -18,4 +18,6 @@
 - Search and serve now functioning with Go templates
 - Integrate OS icons (add to the result table, make linkable, etc...)
 - Using map instead of struct for now
-- [ ] Multi-result query 
+- [ ] Multi-result query
+- [ ] Flesh out further testing
+- [ ] Setup SQL data for alternate config
