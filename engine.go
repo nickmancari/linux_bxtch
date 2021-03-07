@@ -11,13 +11,15 @@ import (
 type document struct {
 	Title string `xml:"Title"`
 	Artist string `xml:"Artist"`
+	Text string `xml:"Company"`
+	ID	int
 }
 
 func main() {
 
 	q, _ := loadDocuments("/root/linux_bxtch/data/test.xml")
 
-	res := search(q, "Bob")
+	res := search(q, "CBS")
 	fmt.Println(res)
 }
 
