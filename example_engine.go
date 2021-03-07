@@ -9,18 +9,18 @@ import (
 )
 
 type document struct {
-	Title string `xml:"TITLE"`
-	Artist string `xml:"ARTIST"`
-	Text string `xml:"COMPANY"`
+	Title string `xml:"title"`
+	URL string `xml:"url`
+	Text string `xml:"abstract"`
 	ID	int
 }
 
 func main() {
 
-	q, _ := loadDocuments("/root/linux_bxtch/data/test.xml")
+	q, _ := loadDocuments("/root/linux_bxtch/data/example.xml")
 
-	res := search(q, "CBS")
-	fmt.Println(res)
+	res := search(q, "cat")
+	fmt.Printf("%s\n", res)
 }
 
 func loadDocuments(path string) ([]document, error) {
