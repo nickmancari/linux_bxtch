@@ -6,4 +6,4 @@
 <p align='center'> -Linux Bitch is a VERY lightweight linux distro search engine written in Go- </p>
 
 <br><br><br>
-<center><h1>Under Construction<h1></center>
+<h1 align='center'>Under Construction</h1>
