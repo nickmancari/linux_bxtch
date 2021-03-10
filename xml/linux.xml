@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<os>
+	<debian>
+		<title>Debian</test>
+		<link>thisisatestlink_debian.iso</link>
+		<image>path/to/image/debian.png</image>
+	</debian>
+	<fedora>
+		<title>Fedora</title>
+		<link>thisisatestlink_fedora.iso</link>
+		<image>path/to/image/fedora.png</image>
+	</fedora>
+</os>
