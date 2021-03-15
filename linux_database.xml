@@ -69,4 +69,79 @@
     <url>https://cdimage.ubuntu.com/kubuntu/releases/20.10/release/kubuntu-20.10-desktop-amd64.iso</url>
     <abstract>Kubuntu, kubuntu, debian, deb, Deb</abstract>
   </doc>
+  <doc>
+    <title>Lubuntu</title>
+    <url>http://cdimage.ubuntu.com/lubuntu/releases/19.04/release/lubuntu-19.04-desktop-amd64.iso</url>
+    <abstract>Lubuntu, lubuntu, debian, deb, Deb</abstract>
+  </doc>
+  <doc>
+    <title>MX</title>
+    <url>http://mirror.umd.edu/mxlinux-iso/MX/Final/MX-19.3_KDE_x64.iso</url>
+    <abstract>MX, mx, m, x</abstract>
+  </doc>
+  <doc>
+    <title>Manjaro</title>
+    <url>https://osdn.net/projects/manjaro/storage/xfce/20.2.1/manjaro-xfce-20.2.1-210103-linux59.iso</url>
+    <abstract>Manjaro, manjaro</abstract>
+  </doc>
+  <doc>
+    <title>Mint</title>
+    <url>http://mirrors.evowise.com/linuxmint/stable/20/linuxmint-20-cinnamon-64bit.iso</url>
+    <abstract>Mint, mint</abstract>
+  </doc>
+  <doc>
+    <title>OpenBSD</title>
+    <url>https://cdn.openbsd.org/pub/OpenBSD/6.8/i386/cd68.iso</url>
+    <abstract>OpenBSD, openbsd, bsd, BSD, Software, Distribution</abstract>
+  </doc>
+  <doc>
+    <title>OpenSUSE</title>
+    <url>http://download.opensuse.org/distribution/leap/15.2/iso/openSUSE-Leap-15.2-DVD-x86_64.iso</url>
+    <abstract>OpenSUSE, opensuse, suse, Open</abstract>
+  </doc>
+  <doc>
+    <title>Oracle</title>
+    <url>https://yum.oracle.com/ISOS/OracleLinux/OL8/u3/x86_64/OracleLinux-R8-U3-x86_64-dvd.iso</url>
+    <abstract>Oracle, oracle, solaris</abstract>
+  </doc>
+  <doc>
+    <title>ParrotOS</title>
+    <url>https://download.parrot.sh/parrot/iso/4.10/Parrot-home-4.10_amd64.iso</url>
+    <abstract>ParrotOS, parrotos, OS, os, parrot</abstract>
+  </doc>
+  <doc>
+    <title>ReactOS</title>
+    <url>https://iso.reactos.org/bootcd/reactos-bootcd-0.4.15-dev-1602-g5112776-x86-gcc-lin-dbg.7z</url>
+    <abstract>ReactOS, reactos, react, os</abstract>
+  </doc>
+  <doc>
+    <title>Slackware</title>
+    <url>https://mirrors.slackware.com/slackware/slackware-iso/slackware-14.2-iso/slackware-14.2-install-dvd.iso</url>
+    <abstract>Slackware, slackware, slack, ware</abstract>
+  </doc>
+  <doc>
+    <title>Tails</title>
+    <url>https://tails.osuosl.org/stable/tails-amd64-4.14/tails-amd64-4.14.iso</url>
+    <abstract>Tails, tails, security</abstract>
+  </doc>
+  <doc>
+    <title>TinyCore</title>
+    <url>https://distro.ibiblio.org/tinycorelinux/11.x/x86/release/TinyCore-current.iso</url>
+    <abstract>TinyCore, tinycore, TinyCore Linux, tiny, core</abstract>
+  </doc>
+  <doc>
+    <title>Ubuntu</title>
+    <url>https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-desktop-amd64.iso</url>
+    <abstract>Ubuntu, ubuntu, Debian, deb</abstract>
+  </doc>
+  <doc>
+    <title>Xubuntu</title>
+    <url>http://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso</url>
+    <abstract>Xubuntu, xubuntu, Debian, deb</abstract>
+  </doc>
+  <doc>
+    <title>Zorin</title>
+    <url>https://zrn.co/15core64</url>
+    <abstract>Zorin</abstract>
+  </doc>
 </feed>
