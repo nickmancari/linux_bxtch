@@ -1,0 +1,37 @@
+<feed>
+  <doc>
+    <title>Android</title>
+    <url>https://osdn.net/projects/android-x86/downloads/69704/android-x86_64-8.1-r3.iso</url>
+    <abstract>android, mobile OS, Android</abstract>
+  </doc>
+  <doc>
+    <title>Arch Linux</title>
+    <url>http://mirrors.acm.wpi.edu/archlinux/iso/2020.12.01/archlinux-2020.12.01-x86_64.iso</url>
+    <abstract>archlinux, Arch Linux, pacman</abstract>
+  </doc>
+  <doc>
+    <title>Arco Linux</title>
+    <url>https://bike.seedhost.eu/arcolinux/iso/arcolinux-v20.11.9-x86_64.iso</url>
+    <abstract>arcolinux, Arco Linux, archlinux, pacman, Archlinux, Arch Linux,</abstract>
+  </doc>
+  <doc>
+    <title>Debian</title>
+    <url>https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso</url>
+    <abstract>Debian, debian, deb, Open Source</abstract>
+  </doc>
+  <doc>
+    <title>Cubes</title>
+    <url>https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.0.4-rc1-x86_64.iso</url>
+    <abstract>Cubes, cubes</abstract>
+  </doc>
+  <doc>
+    <title>Fedora</title>
+    <url>https://download.fedoraproject.org/pub/fedora/linux/releases/33/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-33-1.2.iso</url>
+    <abstract>Fedora, fedora, Redhat, redhat, rpm</abstract>
+  </doc>
+  <doc>
+    <title>PopOS</title>
+    <url>https://pop-iso.sfo2.cdn.digitaloceanspaces.com/19.10/amd64/intel/8/pop-os_19.10_amd64_intel_8.iso</url>
+    <abstract>Pop, PopOS, popos</abstract>
+  </doc>
+</feed>

@@ -1,4 +1,4 @@
-// POC example of 'search & serve' using data from JSON file
+// POC example of 'search & serve' using data from XML file
 
 package main
 
@@ -6,7 +6,6 @@ import (
 	"net/http"
 	"fmt"
 	"html/template"
-	"github.com/thedevsaddam/gojsonq"	
 )
 
 
