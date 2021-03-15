@@ -39,12 +39,12 @@ func results(w http.ResponseWriter, r *http.Request) {
 	
 	search := r.FormValue("q")
 	
-	docs, err := loadDocuments("linux_database.xml")
+	docs, err := LoadDocuments("linux_database.xml")
 	if err != nil {
 		fmt.Println(err)
 	}
 
-	res := searchData(docs, search)
+	res := SearchData(docs, search)
 
 	data := map[string]string{"Search": search, "Link": link, "Image": image,}
 	tpl.ExecuteTemplate(w, "search.html", data)

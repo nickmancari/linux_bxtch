@@ -16,7 +16,7 @@ type document struct {
 
 
 
-func loadDocuments(path string) ([]document, error) {
+func LoadDocuments(path string) ([]document, error) {
     f, err := os.Open(path)
     if err != nil {
         return nil, err
@@ -38,7 +38,7 @@ func loadDocuments(path string) ([]document, error) {
     return docs, nil
 }
 
-func searchData(docs []document, term string) []document {
+func SearchData(docs []document, term string) []document {
     var r []document
     for _, doc := range docs {
         if strings.Contains(doc.Text, term) {
