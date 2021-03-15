@@ -34,4 +34,39 @@
     <url>https://pop-iso.sfo2.cdn.digitaloceanspaces.com/19.10/amd64/intel/8/pop-os_19.10_amd64_intel_8.iso</url>
     <abstract>Pop, PopOS, popos</abstract>
   </doc>
+  <doc>
+    <title>Deepin</title>
+    <url>http://cdimage.deepin.com/releases/20.1/deepin-desktop-community-1010-amd64.iso</url>
+    <abstract>Deepin, deepin, deb</abstract>
+  </doc>
+  <doc>
+    <title>Back Arch</title>
+    <url>https://ftp.halifax.rwth-aachen.de/blackarch/iso/blackarch-linux-full-2020.12.01-x86_64.iso</url>
+    <abstract>Black Arch, black arch, arch, black</abstract>
+  </doc>
+  <doc>
+    <title>EndeavourOS</title>
+    <url>https://mirror.linux.pizza/endeavouros/iso/endeavouros-2020.09.20-x86_64.iso</url>
+    <abstract>EndeavourOS, endeavouros, OS, Endeavour</abstract>
+  </doc>
+  <doc>
+    <title>FreeBSD</title>
+    <url>https://download.freebsd.org/ftp/releases/i386/i386/ISO-IMAGES/12.2/FreeBSD-12.2-RELEASE-i386-dvd1.iso</url>
+    <abstract>FreeBSD, freebsd, bsd, BSD, Software, Distribution</abstract>
+  </doc>
+  <doc>
+    <title>Gentoo</title>
+    <url>https://gentoo.osuosl.org/releases/x86/20160704/livedvd-x86-amd64-32ul-20160704.iso</url>
+    <abstract>Gentoo, gentoo, 2, gen</abstract>
+  </doc>
+  <doc>
+    <title>Kali Linux</title>
+    <url>https://cdimage.kali.org/kali-2020.4/kali-linux-2020.4-installer-amd64.iso</url>
+    <abstract>Kali Linux, kali, linux, security, pentesting, Pentesting, Security, hack, Hack</abstract>
+  </doc>
+  <doc>
+    <title>Kubuntu</title>
+    <url>https://cdimage.ubuntu.com/kubuntu/releases/20.10/release/kubuntu-20.10-desktop-amd64.iso</url>
+    <abstract>Kubuntu, kubuntu, debian, deb, Deb</abstract>
+  </doc>
 </feed>
