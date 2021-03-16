@@ -46,6 +46,10 @@ func results(w http.ResponseWriter, r *http.Request) {
 
 	res := SearchData(docs, search)
 
-	data := map[string]string{"Search": search, "Link": link, "Image": image,}
+	data := struct {
+		Search interface{}
+	}{
+		Search:	res, 
+	}
 	tpl.ExecuteTemplate(w, "search.html", data)
 }
