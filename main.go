@@ -47,7 +47,7 @@ func results(w http.ResponseWriter, r *http.Request) {
 	res := SearchData(docs, search)
 
 	data := struct {
-		Search interface{}
+		Search []document
 	}{
 		Search:	res, 
 	}

@@ -13,13 +13,13 @@ import (
 var tpl *template.Template
 
 func init() {
-	tpl = template.Must(template.ParseGlob("*.html"))
+	tpl = template.Must(template.ParseGlob("../*.html"))
 } 
 
 func main() {
 	
-	views := http.FileServer(http.Dir("views"))
-	images := http.FileServer(http.Dir("images"))
+	views := http.FileServer(http.Dir("../views"))
+	images := http.FileServer(http.Dir("../images"))
 
 	http.Handle("/views/", http.StripPrefix("/views/", views))
 	http.Handle("/images/", http.StripPrefix("/images/", images))	
@@ -40,10 +40,10 @@ func results(w http.ResponseWriter, r *http.Request) {
 	
 	search := r.FormValue("q")
 
-        res := gojsonq.New().File("./data/complete_master.json").Find(search)
+        res := gojsonq.New().File("../data/complete_master.json").Find(search)
 	link := fmt.Sprint(res)
 	
-	imagesearch := gojsonq.New().File("./data/icons.json").Find(search)
+	imagesearch := gojsonq.New().File("../data/icons.json").Find(search)
         image := fmt.Sprint(imagesearch)	
 
 	data := map[string]string{"Search": search, "Link": link, "Image": image,}
