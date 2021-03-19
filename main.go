@@ -44,25 +44,19 @@ func results(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(err)
 	}
 
-	res := SearchData(docs, search)
+	elements := SearchData(docs, search)
 	
-	elements := res
-	
-//	elementsMap := make(map[string]string)
-//	for i, datap := range elements {
-//		elementsMap[i] = datap
-//	}
-
 	elementsMap := make(map[string]string)
 	for i := 0; i < len(elements); i +=2 {
     		elementsMap[elements[i]] = elements[i+1]
 	}
 
 	data := struct {
+		Res string
 		Search map[string]string
 	}{
 		Search:	elementsMap, 
+		Res:	search,
 	}
 	tpl.ExecuteTemplate(w, "search.html", data)
-	fmt.Println(elementsMap)
 }
