@@ -37,11 +37,11 @@ func LoadDocuments(path string) ([]document, error) {
     return docs, nil
 }
 
-func SearchData(docs []document, term string) []document {
-    var r []document
+func SearchData(docs []document, term string) []string {
+    var r []string
     for _, doc := range docs {
         if strings.Contains(doc.Text, term) {
-            r = append(r, doc)
+            r = append(r, doc.Title + " " + doc.URL)
         }
     }
     return r
