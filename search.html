@@ -29,13 +29,11 @@ tr:nth-child(even) {
   <tr>
     <th>OS Name</th>
     <th>Link</th>
-    <th>Distro Base</th>
   </tr>
 {{range $key, $value := .Search}}
   <tr>
     	<td>{{$key}}</td>
     	<td><a href="{{$value}}">DOWNLOAD</a></td>
-	<td><img src="test"></td>
   </tr>
 {{end}}
 </table>

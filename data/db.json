@@ -1,9 +1,0 @@
-{
-	"Operating_System":[
-		{"name":"Arch Linux", "download":"http://mirrors.acm.wpi.edu/archlinux/iso/2020.12.01/archlinux-2020.12.01-x86_64.iso", "icon":"/images/Arch_logo_small.png"},
-		{"name":"Fedora", "download":"https://download.fedoraproject.org/pub/fedora/linux/releases/33/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-33-1.2.iso", "icon":"/images/RedHat_logo_small.png"},
-		{"name":"Arco Linux", "download":"https://bike.seedhost.eu/arcolinux/iso/arcolinux-v20.11.9-x86_64.iso", "icon":"/images/Arch_logo_small.png"}
-	]
-
-}
-
