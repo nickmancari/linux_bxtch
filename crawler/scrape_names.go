@@ -7,6 +7,7 @@ import (
     "log"
     "net/http"
     "regexp"
+    "strings"
 )
 
 func main() {
@@ -24,13 +25,13 @@ func main() {
     }
 
     // Create a regular expression to find comments
-    re := regexp.MustCompile("<b>(.|\n)*?</b>")
+    re := regexp.MustCompile("/\">[^a-z](.|\n)*?</a>")
     comments := re.FindAllString(string(body), -1)
     if comments == nil {
         fmt.Println("No matches.")
     } else {
         for _, comment := range comments {
-            fmt.Println(comment)
+            fmt.Println(strings.TrimSuffix(comment[3:], "</a>"))
         }
    }
 }
