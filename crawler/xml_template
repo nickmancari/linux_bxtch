@@ -1,0 +1,7 @@
+{{range $v := .Title}}
+ <doc>
+    <title>{{$v}}</title>
+    <url>testing</url>
+    <abstract>linux, all, ALL, All, Linux, LINUX</abstract>
+  </doc>
+{{end}}

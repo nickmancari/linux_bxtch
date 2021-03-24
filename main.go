@@ -39,7 +39,7 @@ func results(w http.ResponseWriter, r *http.Request) {
 	
 	search := r.FormValue("q")
 	
-	docs, err := LoadDocuments("linux_database.xml")
+	docs, err := LoadDocuments("test_template.xml")
 	if err != nil {
 		fmt.Println(err)
 	}
